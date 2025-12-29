@@ -1,0 +1,22 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="{{ '/assets/vendor/bootstrap/css/bootstrap.min.css' | prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{ '/assets/css/main.css' | prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{ '/assets/vendor/bootstrap/css/bootstrap-responsive.min.css' | prepend: site.baseurl }}" rel="stylesheet">
+    <script src="{{ '//code.jquery.com/jquery-latest.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/vendor/bootstrap/js/bootstrap.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
+
+    <!-- IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+</head>

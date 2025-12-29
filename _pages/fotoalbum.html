@@ -1,0 +1,12 @@
+---
+layout: page
+title: Foto's
+permalink: /fotoalbum/
+order: 1
+---
+        
+<ul id="Gallery" class="gallery">
+    {% for picture in site.data.pictures %}
+        <li><a href="/assets/images/fotoalbum/full/{{ picture }}.jpg"><img src="/assets/images/fotoalbum/thumb/{{ picture }}.jpg" /></a></li>
+    {% endfor %}
+</ul>

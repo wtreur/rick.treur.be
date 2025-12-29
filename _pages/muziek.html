@@ -1,0 +1,27 @@
+---
+title: Muziek
+layout: page
+permalink: /muziek/
+order: 2
+---
+
+<div class="row">
+    <div class="span5 well geo-match-none">
+        <h3>Helaas</h3>
+        <p>Deze muziek is alleen te luisteren op de begraafplaats</p>
+    </div>
+
+    {% for track in site.data.tracks %}
+        <div class="span3 well geo-match-only">
+            <h3>{{ track.title }}<br><small>{{ track.artist }}</small></h3>
+            <p>{{ track.description }}</p>
+            <button class="btn" onclick="{{ track.id }}.play()"><i class="icon-play"></i></button>
+            <button class="btn" onclick="{{ track.id }}.pause()"><i class="icon-pause"></i></button>
+            <button class="btn" onclick="{{ track.id }}.pause(); {{ track.id }}.currentTime=0"><i class="icon-stop"></i></button>
+            <audio id="{{ track.id }}">
+                <source src="/assets/audio/{{ track.file }}.mp3" type='audio/mpeg; codecs="mp3"'>
+                <source src="/assets/audio/{{ track.file }}.ogg" type='audio/ogg; codecs="vorbis"'>
+            </audio>
+        </div>
+    {% endfor %}
+</div>

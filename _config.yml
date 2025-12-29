@@ -1,0 +1,16 @@
+# Site settings
+title: Rick Treur
+baseurl: ""
+url: "https://rick.treur.be"
+
+# Build settings
+include: ['_pages']
+exclude: ["README.md"]
+markdown: kramdown
+
+# Plugins
+gems:
+  - jekyll-assets
+
+# Serve settings
+host: 0.0.0.0

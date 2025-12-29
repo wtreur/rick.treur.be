@@ -1,0 +1,73 @@
+---
+title: Rick
+layout: page
+permalink: /
+order: 0
+---
+
+<!-- Main hero unit for a primary marketing message or call to action -->
+<div class="hero-unit main-header">
+    <div class="row">
+        <div class="span5" style="text-align: center">
+            <h2>Rick Treur</h2>
+            <img src="../assets/images/rick-treur.jpg" />
+            <p class="dates">1 november 1951 - 13 april 2012</p>
+        </div>
+        <div class="span5">
+            <h2>&nbsp;</h2>
+            <p>De enorme hoeveelheid steun en liefde die we hebben ontvangen tijdens de ziekte van Rick heeft ons veel goeds gedaan.</p>
+            <p>Jullie aanwezigheid bij het afscheid van Rick heeft ons diep geraakt en laat zien wat voor een bijzondere man hij was.</p>
+            <p>We willen jullie hartelijk danken voor de steun en aanwezigheid. Deze herinneringen zullen ons nog lang bij blijven en geeft ons veel kracht voor de komende tijd.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Example row of columns -->
+<div class="row">
+    <div class="span5 well well-large">
+        <h2><a href="/fotoalbum">Foto's</a></h2>
+        <div id="carouselMain" class="carousel slide">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="active item">
+                    <img src="/assets/images/fotoalbum/thumb/london-pa-ma-3.jpg" alt="London">
+                </div>
+                <div class="item">
+                    <img src="/assets/images/fotoalbum/thumb/london-gezin.jpg" alt="London">
+                </div>
+                <div class="item">
+                    <img src="/assets/images/fotoalbum/thumb/london-monument.jpg" alt="London">
+                </div>
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#carouselMain" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#carouselMain" data-slide="next">&rsaquo;</a>
+        </div>
+        <p>&nbsp;</p>
+        <p><a class="btn" href="/fotoalbum">Meer foto's</a></p>
+    </div>
+    <div class="span3 well well-large geo-match-only">
+        <h2><a href="/muziek">Muziek</a></h2>
+        <h3>Breakfast in America<br><small>Supertramp</small></h3>
+        <p>Gespeeld door Maarten & Walter op de 60<sup>e</sup> verjaardag van Rick</p>
+        <button class="btn" onclick="breakfastInAmerica.play()"><i class="icon-play"></i></button>
+        <button class="btn" onclick="breakfastInAmerica.pause()"><i class="icon-pause"></i></button>
+        <button class="btn" onclick="breakfastInAmerica.pause(); breakfastInAmerica.currentTime=0"><i class="icon-stop"></i></button>
+        <audio id="breakfastInAmerica">
+            <source src="/assets/audio/breakfast-in-america.mp3" type='audio/mpeg; codecs="mp3"'>
+            <source src="/assets/audio/breakfast-in-america.ogg" type='audio/ogg; codecs="vorbis"'>
+        </audio>
+        <p>&nbsp;</p>
+        <h3>Don't know why<br><small>Norah Jones</small></h3>
+        <p>Gespeeld door Maarten & Walter Rick zijn uitvaart</p>
+        <button class="btn" onclick="dontKnowWhy.play()"><i class="icon-play"></i></button>
+        <button class="btn" onclick="dontKnowWhy.pause()"><i class="icon-pause"></i></button>
+        <button class="btn" onclick="dontKnowWhy.pause(); dontKnowWhy.currentTime=0"><i class="icon-stop"></i></button>
+        <audio id="dontKnowWhy">
+            <source src="/assets/audio/dont-know-why.mp3" type='audio/mpeg; codecs="mp3"'>
+            <source src="/assets/audio/dont-know-why.ogg" type='audio/ogg; codecs="vorbis"'>
+        </audio>
+        <p>&nbsp;</p>
+        <p><a class="btn" href="/muziek">Meer muziek</a></p>
+    </div>
+</div>
